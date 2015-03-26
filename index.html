@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://hired.com/profile -->
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" class=" js flexbox backgroundsize boxshadow cssanimations csstransforms csstransforms3d csstransitions generatedcontent no-hidpi appearance"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+<meta charset="utf-8">
+<script src="./Profile_files/rollbar.min.js" async=""></script><script src="https://js-agent.newrelic.com/nr-632.min.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TV3WBW"></script><script type="text/javascript" async="" src="./Profile_files/tracking-min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"52b5b06cfe","applicationID":"6081049","transactionName":"JQoMQBcJCVpRRRlVVQgBC1AEEgBFG0dEWVIPCQdHShUNWUM=","queueTime":0,"applicationTime":713,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAEHWVdWGwUAXFBSAwg="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta content="INDEX, FOLLOW" name="ROBOTS">
+<meta content="Hired - Marketplace for Recruiting Top Talent" property="og:title">
+<meta content="website" property="og:type">
+<meta content="https://dmrxx81gnj0ct.cloudfront.net/assets/social-logo-aa9344b91aee94548a2da992acdf38a8.png" property="og:image">
+<meta content="https://hired.com/" property="og:url">
+<meta content="Hired" property="og:site_name">
+<meta content="12806518" property="fb:admins">
+<meta content="11003525" property="fb:admins">
+<meta content="341938729194248" property="fb:app_id">
+<meta content="Let the World&#39;s Best Companies Compete For You." property="og:description">
+<meta content="221456" property="uid">
+<meta content="Hired is a two-sided marketplace that connects talent with top tech companies. Originally known as Developer Auction, Hired now works with everyone from early stage startups to large public companies." name="description">
+<meta content="hired, marketplace, developers, engineers, two-sided, talent, developer, auction, startups, tech, sales, ruby, node, javascript, angular, cocoa, python, php, go, java, c, objective-c, ios, android, graphic, design, devops, data, science, product, management" name="keywords">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="none" name="msapplication-config">
+<meta content="77fa531398233ba4b21e315eec2e4217" name="p:domain_verify">
+<meta content="Hired - Marketplace for Recruiting Top Talent" name="twitter:title">
+<meta content="Hired is a two-sided marketplace that connects talent with top tech companies. Originally known as Developer Auction, Hired now works with everyone from early stage startups to large public companies." name="twitter:description">
+<meta content="https://dmrxx81gnj0ct.cloudfront.net/assets/social-logo-aa9344b91aee94548a2da992acdf38a8.png" name="twitter:image">
+
+<title>Your Profile | Hired</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="W11+ayWvxYboVbS6EKA7emx/VWRRKEyqulrUoNKdEPDRO8CeHpz476JAS61XzUMvfmuAIIkZl0hlGreKH/Y1gQ==">
+<link rel="stylesheet" media="all" href="https://dmrxx81gnj0ct.cloudfront.net/assets/application-e90362a510f52d8fdc268da7521db28b.css" debug="false">
+<link rel="stylesheet" media="all" href="https://cloud.typography.com/7210632/727402/css/fonts.css">
+<link href="https://hired.com/favicon.ico" rel="icon" type="image/x-icon">
+<script src="./Profile_files/head-33d3c2818757f39a922070b9ba9dbcad.js" debug="false"></script>
+<script src="https://cdn.optimizely.com/js/5414328115134464.js"></script>
+
+
+<style type="text/css">.addthisevent {visibility:hidden;}.addthisevent-drop ._url,.addthisevent-drop ._start,.addthisevent-drop ._end,.addthisevent-drop ._zonecode,.addthisevent-drop ._summary,.addthisevent-drop ._description,.addthisevent-drop ._location,.addthisevent-drop ._organizer,.addthisevent-drop ._organizer_email,.addthisevent-drop ._facebook_event,.addthisevent-drop ._all_day_event {display:none!important;}</style><script type="text/javascript" async="" src="https://munchkin.marketo.net/munchkin.js"></script><style type="text/css">.addthisevent {visibility:hidden;}.addthisevent-drop ._url,.addthisevent-drop ._start,.addthisevent-drop ._end,.addthisevent-drop ._zonecode,.addthisevent-drop ._summary,.addthisevent-drop ._description,.addthisevent-drop ._location,.addthisevent-drop ._organizer,.addthisevent-drop ._organizer_email,.addthisevent-drop ._facebook_event,.addthisevent-drop ._all_day_event {display:none!important;}</style></head>
+
+<body class="c_candidates-profiles a_show c_candidates-profiles_a_show hasGoogleVoiceExt" style="padding-top: 40px;">
+
+
+
+<div class="app">
+
+<div class="container container-page">
+<div class="row flush" data-developer-id="221456" id="profile">
+<div class="col-lg-9 col-md-9 col-sm-8">
+<div class="row">
+<div class="col-lg-4 col-md-4 hidden-sm visible-xs" id="profile-left">
+<div class="row">
+<div class="col-lg-12">
+<a href="https://hired.com/profile/edit?focus=photo"><div id="profile-photo">
+<div id="profile-photo-image">
+<img src="./Profile_files/profile.jpg" alt="Profile">
+</div>
+</div>
+</a>
+
+
+</div>
+</div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12" id="profile-main">
+<div class="row flush">
+<div class="col-lg-12" id="profile-header">
+<h1 id="profile-name">
+<div class="bookmark">
+</div>
+Jason Ebueng
+</h1>
+<h3 class="normal-case" id="profile-heading">
+Jack-of-all-trades developer with experience in Ruby and Backbone; currently instructing Rails courses for a nonprofit coding workshop
+<i class="fa fa-question-circle" data-placement="bottom" rel="tooltip" title="" data-original-title="Please contact your Talent Advocate (lynette@hired.com) if you&#39;d like to modify this headline."></i>
+</h3>
+</div>
+</div>
+
+<p class="profile-tags">
+<span class="label">Git</span>
+<span class="label">Ruby</span>
+<span class="label">C#</span>
+<span class="label">JavaScript</span>
+<span class="label">Python</span>
+<span class="label">Rails</span>
+<span class="label">TDD</span>
+<span class="label">aJax</span>
+<span class="label">jQuery</span>
+<span class="label">HTML</span>
+<span class="label">CSS</span>
+<span class="label">Backbone</span>
+<span class="label">Backbone.js</span>
+<span class="label">Cloudinary</span>
+<span class="label">ProTools</span>
+<span class="label">PhotoShop</span>
+<span class="label">Django</span>
+<span class="label">Ruby on Rails</span>
+<span class="label">RSpec</span>
+<span class="label">RESTful</span>
+<span class="label">API</span>
+<a href="https://hired.com/profile/edit?focus=skills" style="display: none;">edit</a>
+</p>
+
+<ul class="profile-subheading">
+<li>
+Based in San Francisco, CA
+</li>
+<li>
+Willing to work in
+<a class="js-toggle-locations" href="javascript:void(0);">
+14 locations.
+</a>
+<ul class="list--dotted-line list-unstyled js-locations-list" style="display: none;">
+<li>
+<strong>
+San Francisco Bay Area
+</strong>
+-
+East Bay, North Bay, Peninsula, San Francisco, South Bay
+</li>
+<li>
+<strong>
+New York
+</strong>
+-
+Brooklyn / Queens, Manhattan
+</li>
+<li>
+<strong>
+Los Angeles
+</strong>
+-
+Downtown, Orange County, Pasadena, Valley, West Hollywood / Hollywood, Westside
+</li>
+<li>
+<strong>
+Seattle
+</strong>
+-
+Seattle
+</li>
+</ul>
+</li>
+<li>Currently working as Volunteer, Organizer at RailsBridge.</li>
+<li class="roles">Desired roles: <span>HTML/CSS</span>, <span>JavaScript Frontend</span>, or <span>Ruby</span>.</li>
+<li>Is a US Citizen or Permanent Resident.</li>
+<li>Interested in opportunities at companies in all stages.</li>
+<li>
+Interested in permanent roles only
+</li>
+</ul>
+
+<div class="profile-section summary"><h2>What I'm About!</h2>
+
+<p>I'm all about team and self-improvement. The journey I've been on has been powered by a thirst for betterment...thus, I'm looking to meet more talented engineers and continue developing. Ultimately my mission is to inspire people to discover code!</p>
+
+<h2>To sum myself up...</h2>
+
+<p>I've been coding for quite a few years. I've taken a variety of programming courses and I've submerged myself completely in software development. As a web developer, I practice the Full-Stack and finished 2014 with an onslaught of projects utilizing Git, Ruby, Rails, TDD, CSS, HTML, Javascript, aJax, jQuery, Backbone, Heroku, and PostgreSQL. </p>
+
+<h2>What I’ve worked on</h2>
+
+<ul>
+<li><p><strong>Hesi</strong> - <a href="http://hesi.herokuapp.com/" title="Hesi">Live Demo</a><br><br>
+Hesi was a turbulent trek in consuming a third-party API with Cloudinary's services to make an image uploading app with filtering effects. Making the connection between client-side and two different servers with aJax and jQuery enabled me to have a functional app on mobile platforms as well!</p></li>
+<li><p><strong>Friend Network</strong> - <a href="http://holyoke.github.io/CSS-Friend-Network-Mock-Up/" title="Friend Network">Live Demo</a><br><br>
+To practice my CSS/HTML abilities, I've been doing a mock-up of familiar design elements within a website. This project really helped me understand how to structure a webpage so a front-end framework can use it's templating features to inject data into HTML. </p></li>
+<li><p><strong>Powerpoint Platformer</strong> - <a href="https://youtu.be/RYIHuTe8KPA" title="Powerpoint Platformer">Video Presentation</a><br><br>
+Powerpoint Platformer was an Xbox Live project utilizing C# and XNA. I coded a game to present another <a href="https://youtu.be/Mw3kriJLbLM" title="game">game</a> I made with XNA! It features stereo sound effects, interactive audio and video, and local multi-player so the audience could interact with the presentation while I spoke. </p></li>
+</ul>
+
+<h2>Currently I've been...</h2>
+
+<ul>
+<li><p><strong>RailsBridge</strong> - <a href="http://railsbridge.org/" title="RailsBridge">Organization Website</a><br><br>
+During these last few months I've been working with the organizations RailsBridge and Mission-Bit. At RailsBridge, I teach Ruby, Rails, and JavaScript to women with a wonderful curriculum. I also teach at Mission-Bit, an after-school program for high-school students to learn Ruby, HTML, and Sinatra. </p></li>
+<li><p><strong>Udemy Courses</strong> - <a href="http://i.imgur.com/AM8krjG.png" title="Udemy">My Courses</a><br><br>
+I've signed up for Udemy Courses in iOS Development, Angular, CSS/HTML, Django, and jQuery Ui. They were on a sale during a New Year's promotion, and I look forward to completing them all.  </p></li>
+<li><p><strong>TrElla</strong> - <a href="https://github.com/Holyoke/Trella" title="Trella">Github</a><br><br>
+Currently I'm building TrElla, a Trello-inspired productivity app. It utilizes Rails and SQL for the back-end and I'm setting up the API for Backbone to interact with. I will use jQuery to implement drag-and-dropping UI features for a single-page application. Check out my progress within the commits! </p></li>
+</ul>
+
+<h2>What I’m looking to do next!</h2>
+
+<p>I'm looking for a strong team with a collaborative culture. I maintain a desire to continue growing as a software developer, so I will hit the ground running while learning the environment as well. </p>
+
+<p>I would like to contribute to areas of Lifestyle, Education, Science, Music, Social Media, and Video Games. Nonetheless, if the product is interesting I'd love to hear about it. </p>
+
+<p>No matter what market I'm in, I want to be a good fit for an exciting company. If you think I can be an asset to your team, let's grab some coffee and chat!</p>
+</div>
+
+<div class="profile-section">
+<h3 class="page-header">Work Experience</h3>
+<div class="row work-history">
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+<span class="work-company">RailsBridge</span>
+<div class="muted">
+<div class="icon-position"></div>
+Volunteer, Organizer
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div>&nbsp;</div>
+<div class="muted">
+<div class="icon-date"></div>
+Jan 2015 — present
+</div>
+</div>
+<div class="col-lg-12 js-summary" style="display: none;"><p>*Teach classes in Ruby, Rails, and Javascript
+<br>*Work with a passionate team to organize events by providing contributors and teaching
+<br>*Organize and contribute to events by managing schedule and enlisting volunteers</p></div>
+<div class="col-lg-10 col-xs-9 js-summary-preview" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+*Teach classes in Ruby, Rails, and Javascript
+</div>
+<div class="col-lg-2 col-xs-3">
+<a class="js-toggle-work-history-details-button" href="javascript:void(0)" style="text-decoration: underline; font-weight: inherit;">
+Show more
+</a>
+</div>
+<hr>
+</div>
+<div class="row work-history">
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+<span class="work-company">EventHubs</span>
+<div class="muted">
+<div class="icon-position"></div>
+Website Programmer
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div>&nbsp;</div>
+<div class="muted">
+<div class="icon-date"></div>
+2015
+</div>
+</div>
+<div class="col-lg-12 js-summary" style="display: none;"><p>*Work with the Python framework, Django, to maintain website features. Utilizes SVN, AJAX, RESTful APIs, HTML / CSS, and Javascript.</p></div>
+<div class="col-lg-10 col-xs-9 js-summary-preview" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+*Work with the Python framework, Django, to maintain website features. Utilizes SVN, AJAX, RESTful APIs, HTML / CSS, and Javascript.
+</div>
+<div class="col-lg-2 col-xs-3">
+<a class="js-toggle-work-history-details-button" href="javascript:void(0)" style="text-decoration: underline; font-weight: inherit;">
+Show more
+</a>
+</div>
+<hr>
+</div>
+<div class="row work-history">
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+<span class="work-company">C2 Education</span>
+<div class="muted">
+<div class="icon-position"></div>
+Computer Science Tutor
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div>&nbsp;</div>
+<div class="muted">
+<div class="icon-date"></div>
+Oct 2012 — Sep 2014
+</div>
+</div>
+<div class="col-lg-12 js-summary" style="display: none;"><p>*Wrote scripts to track student performance and to create vocabulary worksheets
+<br>*Taught a variety of mathematics to elementary, middle school, and high school students</p></div>
+<div class="col-lg-10 col-xs-9 js-summary-preview" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+*Wrote scripts to track student performance and to create vocabulary worksheets
+</div>
+<div class="col-lg-2 col-xs-3">
+<a class="js-toggle-work-history-details-button" href="javascript:void(0)" style="text-decoration: underline; font-weight: inherit;">
+Show more
+</a>
+</div>
+<hr>
+</div>
+<div class="row work-history">
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+<span class="work-company">iD Tech Camps</span>
+<div class="muted">
+<div class="icon-position"></div>
+Java Instructor
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div>&nbsp;</div>
+<div class="muted">
+<div class="icon-date"></div>
+May 2012 — Aug 2012
+</div>
+</div>
+<div class="col-lg-12 js-summary" style="display: none;"><p>*Taught dozens of high school students in programming Java, C++, 3D Track Design
+<br>*Blizzard Entertainment and NBC recognized camp as #1 in the nation </p>
+
+<p>A slideshow can be viewed here http://youtu.be/xeHpibBSQko</p></div>
+<div class="col-lg-10 col-xs-9 js-summary-preview" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+*Taught dozens of high school students in programming Java, C++, 3D Track Design
+</div>
+<div class="col-lg-2 col-xs-3">
+<a class="js-toggle-work-history-details-button" href="javascript:void(0)" style="text-decoration: underline; font-weight: inherit;">
+Show more
+</a>
+</div>
+<hr>
+</div>
+<div class="row work-history">
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+<span class="work-company">Audio Engineering Society</span>
+<div class="muted">
+<div class="icon-position"></div>
+Club President
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div>&nbsp;</div>
+<div class="muted">
+<div class="icon-date"></div>
+Jun 2011 — Jul 2012
+</div>
+</div>
+<div class="col-lg-12 js-summary" style="display: none;"><p>*Established a budget for fiscal year in terms of funding and fundraising *Led monthly discussions and projects concerning audio technology *Project lead for community event for the Pomona Boys and Girls Club that served 70 children Page 2
+</p></div>
+<div class="col-lg-10 col-xs-9 js-summary-preview" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+*Established a budget for fiscal year in terms of funding and fundraising *Led monthly discussions and projects concerning audio technology *Project lead for community event for the Pomona Boys and Girls Club that served 70 children Page 2
+</div>
+<div class="col-lg-2 col-xs-3">
+<a class="js-toggle-work-history-details-button" href="javascript:void(0)" style="text-decoration: underline; font-weight: inherit;">
+Show more
+</a>
+</div>
+<hr>
+</div>
+<div class="row work-history">
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+<span class="work-company">Cal Poly Pomona</span>
+<div class="muted">
+<div class="icon-position"></div>
+Madcatz Arena Administrator
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div>&nbsp;</div>
+<div class="muted">
+<div class="icon-date"></div>
+Jun 2012 — Jun 2012
+</div>
+</div>
+<div class="col-lg-12 js-summary" style="display: none;"><p>*Worked with Cyber Sports Network and Madcatz in the Gigabyte eSports LANfest 
+<br>*Organized console- gaming lounge area for hundreds of attendees
+<br>*Gave $25,000 in prize support with support from sponsors</p></div>
+<div class="col-lg-10 col-xs-9 js-summary-preview" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+*Worked with Cyber Sports Network and Madcatz in the Gigabyte eSports LANfest 
+</div>
+<div class="col-lg-2 col-xs-3">
+<a class="js-toggle-work-history-details-button" href="javascript:void(0)" style="text-decoration: underline; font-weight: inherit;">
+Show more
+</a>
+</div>
+<hr>
+</div>
+<div class="row work-history">
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+<span class="work-company">Cal Poly Pomona</span>
+<div class="muted">
+<div class="icon-position"></div>
+Games Room Event Coordinator
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div>&nbsp;</div>
+<div class="muted">
+<div class="icon-date"></div>
+Jan 2012 — Jun 2012
+</div>
+</div>
+<div class="col-lg-12 js-summary" style="display: none;"><p>*Hosted weekly campus gaming tournaments 
+<br>*Setup stations and broadcasting equipment to stream events</p></div>
+<div class="col-lg-10 col-xs-9 js-summary-preview" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+*Hosted weekly campus gaming tournaments 
+</div>
+<div class="col-lg-2 col-xs-3">
+<a class="js-toggle-work-history-details-button" href="javascript:void(0)" style="text-decoration: underline; font-weight: inherit;">
+Show more
+</a>
+</div>
+<hr>
+</div>
+<div class="row work-history">
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+<span class="work-company">Cal Poly Pomona Disabled Resource Center</span>
+<div class="muted">
+<div class="icon-position"></div>
+Digital Media Editor
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div>&nbsp;</div>
+<div class="muted">
+<div class="icon-date"></div>
+Sep 2006 — Aug 2008
+</div>
+</div>
+<div class="col-lg-12 js-summary" style="display: none;"><p>* Edited and scanned media with Kurzweil 3000 and Adobe Acrobat
+<br>* Maintained a catalog of &gt;= 2000 textbooks spanning 7 years
+<br>* Trained and lead dozens of editors</p></div>
+<div class="col-lg-10 col-xs-9 js-summary-preview" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+* Edited and scanned media with Kurzweil 3000 and Adobe Acrobat
+</div>
+<div class="col-lg-2 col-xs-3">
+<a class="js-toggle-work-history-details-button" href="javascript:void(0)" style="text-decoration: underline; font-weight: inherit;">
+Show more
+</a>
+</div>
+<hr>
+</div>
+</div>
+
+<div class="profile-educations">
+<div class="profile-section">
+<h3 class="page-header">Education</h3>
+<div class="row">
+<div class="col-lg-12">
+<b>
+App Academy
+</b>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+Full Stack Web Development
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div class="icon-date"></div>
+2014
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<b>
+Coursera
+</b>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+Computer Science
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div class="icon-date"></div>
+2013
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<b>
+California State Polytechnic University
+</b>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+BA, Audio Engineering, Mathematics
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div class="icon-date"></div>
+2012
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<b>
+Diamond Ranch High School
+</b>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
+
+</div>
+<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 text-right">
+<div class="icon-date"></div>
+2006
+</div>
+</div>
+</div>
+</div>
+
+<div class="profile-section">
+<h3 class="page-header">Images</h3>
+<div class="row">
+<div class="col-lg-12">
+<div class="portfolio-grid">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="thumbnail">
+<div class="screenshot-controls">
+<a confirm="Are you sure you want to destroy this image?" rel="tooltip nofollow" title="" data-method="delete" href="https://hired.com/portfolio_assets/41109" data-original-title="Delete your image"><i class="fa fa-remove">&nbsp;</i>
+</a></div>
+<a href="https://hired.com/list/jason-ebueng/portfolio_assets/41109"><img src="./Profile_files/preview.png" alt="Preview">
+<div class="caption">
+Hesi is an image storage application inspired by filtering effects and built with Rails and Backbone!
+</div>
+</a></div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="thumbnail">
+<div class="screenshot-controls">
+<a confirm="Are you sure you want to destroy this image?" rel="tooltip nofollow" title="" data-method="delete" href="https://hired.com/portfolio_assets/41110" data-original-title="Delete your image"><i class="fa fa-remove">&nbsp;</i>
+</a></div>
+<a href="https://hired.com/list/jason-ebueng/portfolio_assets/41110"><img src="./Profile_files/preview(1).png" alt="Preview">
+<div class="caption">
+Powerpoint Platformer was an Xbox 360 project where I adapted a slideshow presentation into a playable platformer. Up to 4 players!
+</div>
+</a></div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="thumbnail">
+<div class="screenshot-controls">
+<a confirm="Are you sure you want to destroy this image?" rel="tooltip nofollow" title="" data-method="delete" href="https://hired.com/portfolio_assets/41111" data-original-title="Delete your image"><i class="fa fa-remove">&nbsp;</i>
+</a></div>
+<a href="https://hired.com/list/jason-ebueng/portfolio_assets/41111"><img src="./Profile_files/preview(2).png" alt="Preview">
+<div class="caption">
+I helped developed a image gallery feature for the video game news website, Event Hubs. My code was used for writers to display images for 30,000 views a day!
+</div>
+</a></div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="thumbnail">
+<div class="screenshot-controls">
+<a confirm="Are you sure you want to destroy this image?" rel="tooltip nofollow" title="" data-method="delete" href="https://hired.com/portfolio_assets/47333" data-original-title="Delete your image"><i class="fa fa-remove">&nbsp;</i>
+</a></div>
+<a href="https://hired.com/list/jason-ebueng/portfolio_assets/47333"><img src="./Profile_files/preview(3).png" alt="Preview">
+<div class="caption">
+A Full Stack Todo's app. A Rails server whose API outputs to JSON, which is sent to the React framework for client-side work!
+</div>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="recommendations">
+<h3 class="page-header">
+Recommendations
+<a class="normal-case" href="https://hired.com/profile/edit?focus=recommendation_name" style="display: none;">edit</a>
+</h3>
+<div class="recommendation-controls pull-right">
+<a confirm="Are you sure you want to delete this recommendation from your profile?" rel="nofollow" data-method="delete" href="https://hired.com/recommendations/26815"><i class="fa fa-remove"></i>
+</a></div>
+<div class="recommendation-body">
+<h4 class="normal-case">
+Minsoo Kim
+<br>
+Web Development Engineer at Amazon
+</h4>
+<div class="markdown"><p>Jason is a deep thinker who possesses an incredible insight into breaking down complex problems into manageable chunks. Time after time Jason has singularly impressed me through his unraveling tricky programming concepts with clear, concise explanations to ensure that the entire team is on the same page. He is a team player in the truest sense of the word and I could not recommend him higher. </p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="recommendation-controls pull-right">
+<a confirm="Are you sure you want to delete this recommendation from your profile?" rel="nofollow" data-method="delete" href="https://hired.com/recommendations/23582"><i class="fa fa-remove"></i>
+</a></div>
+<div class="recommendation-body">
+<h4 class="normal-case">
+Xi Chen
+<br>
+Software Engineer at Upstart
+</h4>
+<div class="markdown"><p>I strong encourage you to consider Jason’s candidacy for employment. Jason is an ambitious individual who has shown himself to be ready, willing and more than capable of the challenges that employment has to offer. Jason is also a good communicator, in person and in writing. I have no doubt that he will rise to the occasion and tackle any challenge with resounding success.</p>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+
+<div class="profile-section qa-section">
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="container footer">
+<hr>
+<nav>
+<a href="https://hired.com/">Home</a>
+<a href="https://hired.com/employers">Employers</a>
+<a href="https://hired.com/about">About</a>
+<a href="https://hired.com/support">Support</a>
+<a href="https://blog.hired.com/">Blog</a>
+<a href="https://hired.com/careers">Careers</a>
+<a href="https://hired.com/privacy">Privacy</a>
+<a href="https://hired.com/terms">Terms</a>
+<div class="clearfix"></div>
+</nav>
+<div class="footer-copyright">© 2015 Hired, Inc. All Rights Reserved.</div>
+<span id="loading-indicator"></span>
+</div>
+
+<script src="./Profile_files/application-2fe82a3a978c7e2183d9492e3c84bcbd.js" debug="false"></script>
+<script>
+//<![CDATA[
+
+      if(window.Devauc) {
+        Devauc.initialize = function javascriptInitGlobal() {
+          if (Devauc.init) { Devauc.init(); }
+          if (Devauc && Devauc.Candidates && Devauc.Candidates.Profiles) {
+            if (Devauc.Candidates.Profiles.init) { Devauc.Candidates.Profiles.init(); }
+            if (Devauc.Candidates.Profiles.initShow) { Devauc.Candidates.Profiles.initShow(); }
+          }
+        }
+      }
+      jQuery(function() {
+        Devauc.initialize();
+        Devauc.loadComponent('EmploymentSummariesToggle');
+Devauc.loadComponent('SubheadingLocationsToggle');
+      });
+    
+//]]>
+</script>
+        <script>
+          dataLayer = [{'userId': 'c07cef6c-19fc-4d90-b326-b680d02c6cf9'}];
+        </script>
+        <!-- GOOGLE TAG MANAGER INCLUDE -->
+        <noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-TV3WBW"
+        height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TV3WBW');</script>
+        <!-- END GOOGLE TAG MANAGER INCLUDE -->
+
+<div class="hidden">
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+<script type="text/javascript">
+(function() {
+
+  var marketoSessionSignature = '709a5f752177b4bc7dd0dd0991bbdf8baeda1501';
+
+  var didInit = false,
+      currentUserData = {"Email":"jasonebueng@gmail.com","Approved":true,"FunnelState":"introduced_to_employer","Location":"San Francisco, CA","UtmSource":"events","UtmMedium":"ccc_meetup","UtmCampaign":"jan_2015","WorkAuthorizationType":"citizen","FirstName":"Jason","LastName":"Ebueng","InternationalSignup":false,"RejectionReason":"weak-skillset","CurrentTitle":"Volunteer, Organizer","hiredID":221456,"usertype":"Developer","totalOffers":9,"Company":"RailsBridge","SignedUpAt":"2015-01-26T09:59:04.172-08:00","RejectedAt":"2015-02-02T10:53:23.760-08:00","ApprovedAt":"2015-03-23T00:01:44.903-07:00","FirstApprovedAt":"2015-03-09T22:12:53.653-07:00","FirstSubmittedAt":"2015-02-01T21:29:59.311-08:00","SubmittedAt":"2015-02-01T21:29:59.289-08:00","FirstHiredAt":null,"FirstParticipatedAt":"2015-03-16T00:00:00.000-07:00","Unsubscribed":false,"LastConfirmedAuctionId":253,"Country":"US","Locale":"United States","region":"United States","VerticalName":"Tech","AdminContactName":"Lynette Busby","AdminContactEmail":"lynette@hired.com","skillBuckets":"HTML/CSS, JavaScript Frontend, Ruby","DesiredJobTypes":"full_time","hiredDeletedAt":null},
+      recentLogin = (currentUserData.Email && null),
+      newVisitingBrowser = localStorage && !localStorage.hiredMarketoAssociated;
+
+  function initMunchkin() {
+    if(didInit === false && typeof(Munchkin) !== 'undefined') {
+      didInit = true;
+      Munchkin.init('348-IPO-044');
+
+      if ( recentLogin || newVisitingBrowser ) {
+        mktoMunchkinFunction('associateLead', currentUserData, marketoSessionSignature);
+        if (localStorage) localStorage.hiredMarketoAssociated = true;
+      }
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+
+        <script type="text/javascript">if (typeof(interstate) !== 'undefined') { interstate.alias('221456') }</script>
+
+<script>
+//<![CDATA[
+
+      $(function() {
+        $buo({
+          vs:{i:9,f:15,o:15,s:5.1,n:9},
+          reminder: 1,
+          text: "Your browser (%s) is out of date and may not work with all features on Hired. For the best experience, use a modern version of Chrome, Firefox, Safari or IE 10+."
+        });
+      });
+    
+//]]>
+</script>
+</div>
+
+
+
+<div id="menu_item" class="jjMenuItemDiv" style="display: none;">Copy without formatting</div><style>[href^="http://www.faceporn.net/free?"],[href^="http://www.linkbucks.com/referral/"]
+{display:none !important;}</style></body></html>
